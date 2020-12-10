@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SmartLights | Shop</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="store.js" async></script>
+        <script src="jquery-3.5.1.min.js"></script>
+        
+        
+
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="logo.png" width="125px">
+                    </div>
+                    <nav>
+                    <ul id="MenuItems">
+                        <li><a href="frontpage.html">Home</a></li>
+                        <li><a href="productpage.html">Products</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                    </nav>
+                    <a href="cart.html"><img src="Cart.png" width="30px" height="30px"></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="small-container">
+            <div class="row row-2">
+
+                <h2>All products</h2>
+                <h4>Sort by</h4>
+                <select> 
+                    <option>
+                        Popular
+                    </option>
+                    <option>
+                        Price
+                    </option>
+                    <option>
+                        New
+                    </option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="items">
+                    <a href="product2.html"> <img src="lightstrips.png">
+                    <h5><a href="product2.html">Philips Hue<br> LightStrips Plus</a></h5>
+                    <p class="price">
+                        69.90€
+                    </p>
+                    <button>Add to cart</button>
+                </div>
+            <div class="items">
+                <a href="product1.html"><img src="panels.png"></a>
+                <h5><a href="product1.html">NanoLeaf Light Panels<br> Smarter kit Rhythm Edition</a></h5>
+                <p class="price">
+                    120.00€
+                </p>
+                <button>Add to cart</button>
+            </div>
+            <div class="items">
+                <a href="product3.html">  <img src="gu10.png"></a>
+                <h5><a href="product3.html">Philips Hue White and Colour Ambiance Starter kit GU10</a></h5>
+                <p class="price">
+                    142.00€
+                </p>
+                <button>Add to cart</button>
+            </div>
+            <div class="items">
+                <a href="product4.html">  <img src="lifx.png"></a>
+                <h5 class="shop-item-title"><a href="product4.html">LIFX Beam<br> Starter kit</a></h5>
+                <p class="price">
+                    149.00€
+                </p>
+                <button>Add to cart</button>
+            </div>
+            <div class="items">
+                <img src="hexagon.png">
+                <h5><a href="">Nanoleaf Shapes<br> Hexagon Starter kit</a></h5>
+                <p class="price">
+                    129.99€
+                </p>
+                <button>Add to cart</button>
+            </div>
+            <div class="items">
+                <img src="hdmi.png">
+                <h5><a href="">Philips Hue<br> Play HDMI Sync Box</a></h5>
+                <p class="price">
+                    218.00€
+                </p>
+                <button>Add to cart</button>
+            </div>
+            <div class="items items1">
+                <img src="hue11.png">
+                <h5><a href="">Philips Adore HUE White Ambiance</a></h5>
+                <p class="price">
+                    129.99€
+                </p>
+                <button>Add to cart</button>
+            </div>
+            <div class="items">
+                <img src="pendant.png">
+                <h5><a href="">Philips Hue<br> Flourish Pendant Light</a></h5>
+                <p class="price">
+                    120.00€
+                </p>
+                <button>Add to cart</button>
+            </div>
+            <div class="items">
+                <img src="lightbar.png">
+                <h5><a href="">Philips Hue<br> Play Light bar</a></h5>
+                <p class="price">
+                    99.00€
+                </p>
+                <button>Add to cart</button>
+            </div>
+            <div class="items">
+                <img src="ledvance.png">
+                <h5><a href="">Ledvance Smart+ Panel Tunable white LED-Light</a></h5>
+                <p class="price">
+                    169.90€
+                </p>
+                <button>Add to cart</button>
+            </div>
+            <div class="items">
+                <img src="bridge.png">
+                <h5><a href="">Philips Hue<br> Bridge</a></h5>
+                <p class="price">
+                    39.95€
+                </p>
+                <button>Add to cart</button>
+            </div>
+            <div id="meme" class="items items2">
+                <img src="lamp.png">
+                <h5><a href="">WiZ Smart lamp E27, Tunable white</a></h5>
+                <p class="price">
+                    17.90€
+                </p>
+                <button>Add to cart</button>
+                <audio id="myAudio" preload="auto">
+                    <source src="widelamp.ogg" type="audio/ogg">
+                    <source src="widelamp.mp3" type="audio/mpeg">
+                  </audio>
+                 <script>
+                     document.getElementById("myAudio").volume = 0.05;
+                     var audio = $("#myAudio")[0];
+                     $('.items2').on({
+                    mouseenter: function() {
+                     audio.play();
+                        },
+                    mouseleave: function() {
+                     audio.pause();
+                     audio.currentTime = 0;
+                      }       
+        });
+                 </script>
+            </div>
+                
+        </div>    
+        </div>
+
+        
+        <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer1">
+                            <img src="logo.png">
+                            <p class="slogan">We premier in modern smart lightning systems</p>
+                        </div>
+                        <div class="footer2">
+                            <h3> Useful Links</h3>
+                            <ul>
+                                <li>Coupons</li>
+                                <li>Return Policy</li>
+                                <li>Blog Posts</li>
+                            </ul>
+                        </div>
+                        <div class="footer3">
+                            <h3 class = "footerTitle"> Follow us</h3>
+                            <ul>
+                                <li>
+                                    <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+                                    <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+                                    <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="Copyright">Copyright 2020 - Valtteri Hietala & Erik Myllylä</p>
+                </div>
+            </div>
+    </body>
+</html>
