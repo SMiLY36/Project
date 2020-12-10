@@ -379,3 +379,8 @@ input{
 .main-content{
     display: flex;
 }
+.footerbottom {
+    position:absolute;
+    bottom: 0;
+    width:100%;
+ } 
