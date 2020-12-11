@@ -361,12 +361,10 @@ input{
     height: 75%;
     width: 40%;
     z-index: 1;
-    top: 0;
+    top: 15%;
     overflow-x: hidden;
     padding-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    
 }
   .left {
     left: 0;
@@ -374,6 +372,10 @@ input{
   
   .right {
     right: 0;
+    bottom: 20%;
+    height: 500px;
+    position: absolute;
+    
 }
   
 .main-content{
@@ -384,3 +386,37 @@ input{
     bottom: 0;
     width:100%;
  } 
+.linebreaker{
+    width: 600px;
+}
+.final-prices{
+    font-weight: 200;
+    font-size: 18px;
+}
+.total{
+    font-weight: 200;
+    font-size: 18px;
+}
+.footers{
+    background: rgb(31, 31, 31);
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 5px 0 9px;
+    margin-left: -8px;
+    margin-right: -2px;
+    margin-bottom: -8px;
+    margin-top: 50px; 
+}
+.footers h3{
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.footers img {
+    width: 200px;
+    height: 140px;
+}
+.vl{
+    border-left: 3px;
+    color: gray
+}
