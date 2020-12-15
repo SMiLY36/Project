@@ -34,7 +34,7 @@ function ready() {
     }
     */
     updateCartTotal()
-}
+
 
 function removeCartItem(event) {
     var buttonClicked = event.target
