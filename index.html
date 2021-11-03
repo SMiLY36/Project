@@ -39,13 +39,18 @@
             <a href="frontpage.html"><p>
             Link to the website
         </p></a>
-        <script>
+       
+           <p id="today"></p>
+
+            <script>
             var today = new Date();
             var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
             var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
             var dateTime = date+' '+time;
+            document.getElementById("today").innerHTML = dateTime;
             </script>
-            document.write(dateTime);
+            
+          
         <br>
         <h1>Merry christmas and happy new year!</h1>
         <p>Made by Valtteri Hietala & Erik Myllylä</p>
